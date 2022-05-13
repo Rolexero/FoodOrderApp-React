@@ -11,6 +11,7 @@ const Cart = ({onHideCart}) => {
   const totalAmount = `$${ctx.totalAmount.toFixed(2)}`;
 
   const hasItem = cartItems.length > 0
+    console.log("Cart");
 
   const cartItemAddHandler = (item)=>{
     ctx.addItem({...item, amount: 1})
@@ -39,4 +40,4 @@ const Cart = ({onHideCart}) => {
   );
 }
 
-export default Cart
+export default Cart;

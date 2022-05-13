@@ -3,6 +3,7 @@ import MealsSummary from './MealsSummary'
 import AvailableMeals from './AvailableMeals'
 
 const Meals = () => {
+  console.log('Meal')
   return (
     <Fragment>
         <MealsSummary />
@@ -11,4 +12,4 @@ const Meals = () => {
   )
 }
 
-export default Meals
+export default React.memo(Meals);

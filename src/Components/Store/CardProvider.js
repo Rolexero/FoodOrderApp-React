@@ -18,7 +18,7 @@ const cartReducer = (state, action)=>{
         if (existingCartItem) {
             updatedItem = {...existingCartItem, amount: existingCartItem.amount + action.item.amount};
             updatedItems = [...state.items]
-            updatedItems[existingCartItemIndex] = updatedItem
+            updatedItems[existingCartItemIndex] = updatedItem;
         }else{
           updatedItems = state.items.concat(action.item);
         }
@@ -39,7 +39,7 @@ const cartReducer = (state, action)=>{
                 return item.id !== action.id
             })
         }else{
-            let updatedItem= {
+            let updatedItem = {
                           ...existingCartItem,
                           amount: existingCartItem.amount - 1,
                         };

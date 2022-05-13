@@ -4,6 +4,7 @@ import classes from './Header.module.css'
 import HeaderCartButton from './HeaderCartButton'
 
 const Header = ({onShowCart}) => {
+    console.log("Header");
   return (
     <React.Fragment>
         <header className={classes['header']}>
@@ -17,4 +18,4 @@ const Header = ({onShowCart}) => {
   )
 }
 
-export default Header
+export default React.memo(Header);

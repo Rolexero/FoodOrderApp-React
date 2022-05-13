@@ -7,7 +7,7 @@ import CardContext from '../Store/Card-context'
 const HeaderCartButton = ({onShowCart}) => {
     const ctx = useContext(CardContext);
     const [btnIsHightlighted, setBtnIsHighlighted] = useState(false)
-            const { items } = ctx;
+    const { items } = ctx;
 
     const numberOfCart = items.reduce((currItem, item)=>{
         return currItem + item.amount
@@ -17,7 +17,7 @@ const HeaderCartButton = ({onShowCart}) => {
     const classBtn = `${classes.button} ${btnIsHightlighted && classes.bump}`
 
     useEffect(()=>{
-        if (ctx.items.length === 0) {
+        if (items.length === 0) {
             return;
         }
         setBtnIsHighlighted(true);
