@@ -6,7 +6,7 @@ import CardContext from '../../Store/Card-context'
 const MealItem = ({meal}) => {
       const ctx = useContext(CardContext);
 
-  const price = `$${meal.price.toFixed(2)}`
+  const price = `₦${meal.price}`;
 
   const addAmountToCart = (amount)=>{
     ctx.addItem({

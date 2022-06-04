@@ -57,3 +57,13 @@
         transform: scale(1);
     }
 }
+
+@media (max-width: 500px) {
+    .button {
+        padding: 0.2rem 1rem;
+        margin-left: 70px;
+    }
+    .cart {
+        display: none;
+    }
+}

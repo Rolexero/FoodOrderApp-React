@@ -36,7 +36,7 @@ const HeaderCartButton = ({onShowCart}) => {
           <span className={classes['icon']}>
               <CartIcon />
           </span>
-          <span>Your Cart</span>
+          <span className={classes['cart']}>Your Cart</span>
           <span className={classes['badge']}>
               {numberOfCart}
           </span>
